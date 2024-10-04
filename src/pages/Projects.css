@@ -1,0 +1,106 @@
+/* Container styling */
+.projects-container {
+    padding: 4rem 2rem;
+    background-color: #1c2833;  /* Dark blue-gray background */
+    color: #e0e1dd;  /* Light text color for better readability */
+}
+
+/* Title styling */
+h1 {
+    font-size: 36px;
+    color: #e0e1dd;  /* Light gray for the title */
+    font-weight: bold;
+    margin-bottom: 48px;
+    letter-spacing: 0.05em;
+}
+
+/* Cards container styling */
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Individual card styling */
+.project-card {
+    width: 18rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #0d1b2a;  /* Dark near-black background for the cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);  /* Darker shadow for a more pronounced effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);  /* Stronger shadow on hover */
+}
+
+.project-card img {
+    border-radius: 12px 12px 0 0;
+}
+
+/* Card body styling */
+.project-card .card-body {
+    padding: 16px;
+}
+
+.project-card .card-title {
+    font-size: 20px;
+    color: #e0e1dd;  /* Light title color */
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.project-card .card-text {
+    font-size: 14px;
+    color: #cbd5e0;  /* Lighter text for better readability */
+    margin-bottom: 16px;
+}
+
+/* Button styling */
+.custom-btn {
+    width: 48%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn.btn-primary {
+    background-color: #77abb7;  /* Light teal for primary buttons */
+    color: #ffffff;  /* White text for good contrast */
+    border: none;
+}
+
+.custom-btn.btn-primary:hover {
+    background-color: #4c8b93;  /* Darker teal on hover */
+    color: #ffffff;
+}
+
+.custom-btn.btn-secondary {
+    background-color: #e0e1dd;  /* Light gray for secondary buttons */
+    color: #0d1b2a;  /* Dark text for contrast */
+    border: none;
+}
+
+.custom-btn.btn-secondary:hover {
+    background-color: #cbd5e0;  /* Slightly darker on hover */
+    color: #0d1b2a;
+}
+.no-underline {
+    text-decoration: none;
+   
+  }
+
+  .custom-btn a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+  }
+/* Responsive design */
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}

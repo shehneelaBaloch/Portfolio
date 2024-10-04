@@ -1,0 +1,108 @@
+html, body {
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Skills container */
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #1c2833;  /* Dark blue-gray background */
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Darker shadow for depth */
+  margin-bottom: 32px;
+}
+
+/* Section Titles */
+.heading {
+  text-align: center;
+   color: #e0e1dd;  /* Light gray for better contrast */
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #e0e1dd; /* Light teal to match the navbar accent */
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+/* Section Divider */
+.section h2:after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #77abb7;  /* Light teal */
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #334756 0%, #2c394b 50%, #1b263b 100%);  /* Dark gradient background */
+  padding: 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.skills-list li span {
+  padding: 8px;
+  background-color: #0d1b2a;  /* Dark near-black background for skill items */
+  color: #e0e1dd;  /* Light text color */
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Hover Effect */
+.skills-list li:hover span {
+  background-color: #283845;  /* Dark blue-gray on hover */
+  transform: scale(1.05);
+}
+
+/* Icons Styling */
+.skills-list li svg {
+  color: #77abb7;  /* Teal color for icons */
+  font-size: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-list li {
+    font-size: 18px;
+  }
+
+  .skills-list li svg {
+    font-size: 20px;
+  }
+}

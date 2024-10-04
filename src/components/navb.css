@@ -1,0 +1,8 @@
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff !important;  /* Pure white for maximum contrast */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #77abb7 !important;  /* Teal on hover */
+}
