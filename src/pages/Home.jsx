@@ -1,6 +1,6 @@
 // Import Animate.css and your own CSS
 import 'animate.css';
-import './home.css';
+import './Home.css';
 
 const Home = () => {
   return (

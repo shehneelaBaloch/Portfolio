@@ -1,5 +1,5 @@
 import 'animate.css';
-import './skills.css';
+import './Skills.css';
 import { FaReact, FaCss3Alt, FaHtml5, FaJs, FaBootstrap, FaFontAwesome } from 'react-icons/fa'; // Font Awesome icon
 import { SiMui } from 'react-icons/si'; // Correct Material UI icon
 

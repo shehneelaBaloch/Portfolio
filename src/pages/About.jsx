@@ -1,6 +1,6 @@
 // Import Animate.css and your own CSS
 import 'animate.css';
-import './about.css';
+import './About.css';
 import myImage from '../assets/aboutme.jpg';
 import Skills from '../components/Skill/Skills';
 
