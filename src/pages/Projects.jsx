@@ -2,6 +2,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'animate.css';
 import './projects.css'; // Import the new CSS file for enhancements
+import taskImage from './assets/Task.png';
+import weatherImage from './assets/weather.png';
+import movieImage from './assets/movie.png';
 
 function Projects() {
   return (
@@ -12,7 +15,7 @@ function Projects() {
       {/* Cards container */}
       <div className="cards-wrapper d-flex justify-content-center flex-wrap">
         <Card className="project-card m-3 shadow">
-          <Card.Img variant="top" src="src/assets/Task.png" />
+        <Card.Img variant="top" src={taskImage} />
           <Card.Body>
             <Card.Title className="font-weight-bold">Task Management</Card.Title>
             <Card.Text>
@@ -30,7 +33,7 @@ function Projects() {
         </Card>
 
         <Card className="project-card m-3 shadow">
-          <Card.Img variant="top" src="src/assets/weather.png" />
+        <Card.Img variant="top" src={weatherImage} />
           <Card.Body>
             <Card.Title className="font-weight-bold">Weather App</Card.Title>
             <Card.Text>
@@ -48,7 +51,7 @@ function Projects() {
         </Card>
 
         <Card className="project-card m-3 shadow">
-          <Card.Img variant="top" src="src/assets/movie.png" />
+        <Card.Img variant="top" src={movieImage} />
           <Card.Body>
             <Card.Title className="font-weight-bold">Movie Management</Card.Title>
             <Card.Text>
